@@ -1,0 +1,85 @@
+#search-form {
+  position: relative;
+}
+
+#search-input {
+  border: 2px solid #ccc;
+  border-radius: 30px;
+  padding-left: 50px;
+}
+
+#search-button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  border-radius: 50%;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.2s ease-in-out;
+  z-index: 2;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+#search-button.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+#search-button:hover {
+  opacity: 0.8;
+}
+#search-input:focus + #search-button, #search-input:not(:focus):valid + #search-button {
+  opacity: 1;
+}
+
+input[type="text"] {
+  border-radius: 50px;
+  padding: 10px 20px;
+}
+
+.input-group-append button {
+  margin-left: -50px;
+  z-index: 1;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.btn-primary:hover {
+  background-color: #0069d9;
+  border-color: #0062cc;
+}
+
+.btn-primary:focus {
+  box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
+}
+
+.rounded-pill {
+  border-radius: 50px;
+}
+
+
+@media (max-width: 576px) {
+  #search-form {
+    flex-direction: column;
+  }
+
+  #search-input {
+    margin-bottom: 10px;
+    width: 100%;
+  }
+
+  .input-group-btn {
+    width: 100%;
+  }
+}

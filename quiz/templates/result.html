@@ -1,0 +1,15 @@
+{% extends 'question_quiz_list.html' %}
+{% load static %}
+
+{% block content %}
+    <h1>Your Quiz Result</h1>
+    <p>You scored {{ score }} out of {{ total_questions }}.</p>
+
+    {% if score == total_questions %}
+        <p>Congratulations! You got all the answers correct.</p>
+    {% else %}
+        <p>Better luck next time!</p>
+    {% endif %}
+
+    <a href="{% url 'quiz_list' %}">Back to Quiz List</a>
+{% endblock %}

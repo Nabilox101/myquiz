@@ -1,0 +1,40 @@
+{% extends '/home/nabil/myquiz/dictio/templates/base.html' %}
+{% load bleach_tags %}
+
+{% block content %}
+<div  class="container">
+    <h1 style="margin-top: 20px;" class="mb-4">{{ search_term }}</h1>
+    {% if results %}
+        <div class="list-group">
+            {% for result in results %}
+            <div  class="result">
+                <h2 style="color:#3399ff;">{{ result.label }}</h2>
+                <h5 style="color:#00cc66;">{{ result.partofspeech }} {{result.plurality}}</h5>
+                {% if result.image_path %}
+                <img src="{{ result.image_path }}" width="300px" alt="{{ result.value }}" />
+                {% endif %}
+                {% if result.audio_path %}
+                <audio controls>
+                    <source src="{{ result.audio_path }}" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                {% endif %}
+                {% if result.examples %}
+                <h4 style="color:blueviolet;margin-left: 20px;">Examples :</h4>
+                <ol type="a">
+                    {% for example in result.examples %}
+                    <li>
+                    {{ example|safe}}
+                    </li>
+                    {% endfor %}
+                </ol>
+                {% endif %}
+            </div>
+            {% endfor %}
+            
+        </div>
+    </div>    
+    {% else %}
+        <p>No results found.</p>
+    {% endif %}
+{% endblock %}

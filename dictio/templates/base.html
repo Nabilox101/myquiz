@@ -1,0 +1,344 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{% block title %}{% endblock %}</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+        <script src="{% static 'js/jquery.min.js' %}"></script>
+        <script src="{% static 'js/bootstrap.min.js' %}"></script>
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.18/summernote-bs4.min.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.18/summernote-bs4.min.js"></script>
+        <style>
+            
+       
+       
+       .OaxI37rf {
+    margin: 0 25px;
+}
+      
+            
+        
+        
+        .Rtt20CZC {
+            position: relative;
+            z-index: 9930;
+        }
+        .DDo76a5A {
+            color: #000000e0;
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 32px;
+            margin-bottom: 0;
+            margin-top: 0;
+            padding: 32px 12px 16px;
+            text-align: center;
+            font-family: -apple-system,Helvetica Neue,Helvetica,Segoe UI,Roboto,Ubuntu,Arial,sans-serif;
+        }
+        .VhCsqXh3.fT5FbUZH {
+            padding: 3px!important;
+        }
+        .VhCsqXh3.SWiBKk29 {
+            border-color: #0000;
+            border-radius: 30px;
+            padding: 1px;
+         }
+         .pU0erY3G.AKSBsSVX {
+            box-shadow: 0 0 0 1px #0000000d,0 4px 6px 0 #0000001a,0 8px 24px 0 #0003!important;
+        }
+        .VhCsqXh3 {
+          border-color: #a6a6a6;
+          border-radius: 28px;
+          box-shadow: 0 2px 6px 0 #00000026;
+          flex-direction: row;
+          padding: 5px;
+        }
+        .pU0erY3G {
+        background-color: #fff;
+        border-style: solid;
+        display: flex;
+        flex-direction: row;
+        margin: 0 auto;
+        min-width: 150px;
+        position: relative;
+        transition-duration: .3s;
+        transition-property: margin,right;
+        z-index: 3;
+       } 
+       .fT5FbUZH .ruYbJt4f {
+    width: calc(100% - 105px)!important;
+       }
+       .ruYbJt4f {
+    width: calc(100% - 32px);
+        }
+        .xKgUWRKE {
+    display: flex;
+    flex-grow: 1;
+}
+.eF5tw4p5.SWiBKk29 {
+    border-radius: 30px;
+    font-size: 16px;
+    padding-left: 15px;
+}
+.eF5tw4p5 {
+    border: none;
+    border-radius: 28px;
+    font-size: 18px;
+    padding-left: 19px;
+}
+.i0wSXYks {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-appearance: none;
+    border: none;
+    box-sizing: border-box;
+    color: #454545;
+    display: block;
+    flex: 1;
+    letter-spacing: .025em;
+    margin: auto 0;
+    overflow-y: auto;
+    padding: 0;
+    resize: none;
+    width: 100%;
+}
+
+   
+
+textarea {
+    writing-mode: horizontal-tb !important;
+    font-style: ;
+    font-variant-ligatures: ;
+    font-variant-caps: ;
+    font-variant-numeric: ;
+    font-variant-east-asian: ;
+    font-weight: ;
+    font-stretch: ;
+    font-size: ;
+    font-family: monospace;
+    text-rendering: auto;
+    color: fieldtext;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    appearance: auto;
+    -webkit-rtl-ordering: logical;
+    resize: auto;
+    cursor: text;
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+    background-color: field;
+    column-count: initial !important;
+    margin: 0em;
+    border-width: 1px;
+    border-style: solid;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
+    padding: 2px;
+}      
+ 
+textarea:focus-visible{
+    outline: 0px;
+}
+.rRpK2A89 {
+    background-color: #fff0;
+}
+.M93EU7PT {
+    border: 0 #fff0;
+}
+.T_0hmJjD .ty5FUeMm {
+    border-radius: 50%;
+    height: 40px;
+    position: absolute;
+    width: 40px;
+    z-index: 2;
+}
+.NTp64TgT.DNxVk8Q2 {
+    color: #1b85e5;
+}
+.EC3Be35P {
+    line-height: 0;
+    transition: color .25s;
+}
+.T_0hmJjD svg {
+    margin-right: 1px;
+}
+g{
+    fill: none;
+    fill-rule: evenodd;
+    transform: translate(-30, -32);
+}
+.rqPXfmvy, .uvL5S6QL {
+    height: 32px;
+    width: 32px;
+}
+textarea {
+  caret-color: #000;
+  color: #000;
+}
+textarea::placeholder {
+    white-space: nowrap;
+}
+.ui-autocomplete {
+    max-height: 250px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-right: 20px;
+    width: 310px; /* add this line */
+}
+
+.ui-autocomplete.rounded {
+  border-radius: 10px;
+  overflow: hidden;
+}
+.ui-autocomplete.rounded li:first-child {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.ui-autocomplete.rounded li:last-child {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.ui-menu-item {
+  padding: 10px;
+}
+.R29DoyfV {
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+}
+.R29DoyfV, .Rtt20CZC, .tkEdrJ15 {
+    height: 244px;
+    max-height: 244px;
+    min-height: 244px;
+    width: 100%;
+}
+@media (min-width: 1024px)
+{
+    .R29DoyfV, .Rtt20CZC, .tkEdrJ15 {
+    height: 308px;
+    max-height: 308px;
+    min-height: 308px;
+}
+
+}
+
+@media (min-width: 768px)
+       {
+        .OaxI37rf {
+
+            width: 680px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .VhCsqXh3.SWiBKk29 {
+          border-radius: 28px;
+          padding: 5px;
+         }
+          .eF5tw4p5.SWiBKk29 {
+    border-radius: 28px;
+    font-size: 18px;
+    padding-left: 19px;
+}
+
+
+       }
+ </style>
+        {% block extra_css %}{% endblock %}
+    </head>
+    
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="{% url 'home' %}">Moors Code</a>
+        </div>
+    </nav>
+
+        <div style="position:relative">
+            <div class="Rtt20CZC">
+            <h1 class="DDo76a5A">Darija Learning Made Easy</h1>
+            <div id="sd-search-wrapper" data-testid="sd-search-wrapper" class="OaxI37rf" tabindex="-1">
+                <form id="search-form" class="pU0erY3G VhCsqXh3 SWiBKk29 fT5FbUZH AKSBsSVX" style="margin-left:0;margin-right:0;border-width:1px;flex-direction:row" action="{% url 'search' %}" method="GET">
+                    <div class="xKgUWRKE ruYbJt4f" style="margin-top:0;margin-bottom:0">
+                        <textarea id="search-input" name="term" class="i0wSXYks eF5tw4p5 SWiBKk29" style="box-sizing:content-box;height:24px;min-height:24px;line-height:24px;overflow-x:hidden;overflow-y:hidden;text-overflow:ellipsis;padding-top:10px;padding-bottom:10px;" placeholder="Translate to Darija" aria-label="Translate to Darija" aria-autocomplete="both" aria-haspopup="true" aria-expanded="false" aria-controls="suggestions-container" role="combobox" type="text" autocomplete="off" autocapitalize="none" autocorrect="off" spellcheck="false" maxlength="5000"></textarea>
+                    </div>
+                    <div data-testid="search-button-row" class="xeeRAkrm" style="display:flex;align-items:center;flex-direction:row;justify-content:flex-end;padding:0;border-top-style:none;border-top-width:1px;border-top-color:#A6A6A6;z-index:2;margin-top:0;height:48px;min-height:48px">
+                        <div class="T_0hmJjD" style="margin-right:0">
+                            <button id="query-button" aria-label="Search" class="M93EU7PT vL2pSZMd rRpK2A89" tabindex="0" type="submit" style="padding:8px;display:flex;align-items:center;justify-content:center;flex-direction:column;-webkit-tap-highlight-color:transparent">
+                                <div class="EC3Be35P NTp64TgT DNxVk8Q2">
+                                    <svg width="32" height="32" viewBox="0 0 16 16">
+                                        <g fill="none" fill-rule="evenodd" transform="translate(-30 -32)">
+                                            <rect width="241" height="81" x="-.5" y="-.5" stroke="#F7F7F7"></rect>
+                                            <g transform="translate(30 32)">
+                                                <path fill="#1B85E5" d="M9 8.78L7.45 10.3a.65.65 0 0 0 .92.92L10.9 8.7a.65.65 0 0 0 .25-.9.65.65 0 0 0-.13-.19L8.38 4.96a.65.65 0 1 0-.92.92l1.6 1.6H5.15a.65.65 0 1 0 0 1.3h3.84zM8 16A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"></path>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+                
+        </div>
+        </div>
+        <picture>
+            <source media="(min-width: 1280px)" type="image/svg+xml" srcset="https://sofitel.accor.com/destinations/imagerie/marrakech-overview-1400x788-1-3b71_1400x788.jpg">
+            <source media="(min-width: 1024px)" type="image/svg+xml" srcset="https://sofitel.accor.com/destinations/imagerie/marrakech-overview-1400x788-1-3b71_1400x788.jpg">
+            <source media="(min-width: 768px)" type="image/svg+xml" srcset="https://sofitel.accor.com/destinations/imagerie/marrakech-overview-1400x788-1-3b71_1400x788.jpg">
+            <source media="(min-width: 481px)" type="image/svg+xml" srcset="https://sofitel.accor.com/destinations/imagerie/marrakech-overview-1400x788-1-3b71_1400x788.jpg">
+            <source media="(min-width: 321px)" type="image/svg+xml" srcset="https://sofitel.accor.com/destinations/imagerie/marrakech-overview-1400x788-1-3b71_1400x788.jpg">
+            <source class="R29DoyfV" type="image/svg+xml" srcset="https://sofitel.accor.com/destinations/imagerie/marrakech-overview-1400x788-1-3b71_1400x788.jpg">
+            <img class="R29DoyfV" srcset="https://sofitel.accor.com/destinations/imagerie/marrakech-overview-1400x788-1-3b71_1400x788.jpg" alt="">
+        </picture>
+        </div>
+                
+                
+                  
+                
+                
+                
+        
+        {% block content %}
+        {% endblock %}
+    </div>
+    
+    
+   
+
+    {% block extra_js %}
+    <script src="{% static 'js/typeahead.bundle.min.js' %}"></script>
+    <script src="{% static 'js/search.js' %}"></script>
+    {% endblock %}
+
+    <script>
+        $(document).ready(function() {
+            $('.summernote').summernote();
+        });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            document.getElementById("search-input").focus();
+        });
+    </script>
+<script>
+    document.getElementById("search-input").addEventListener("keydown", function(event) {
+      if (event.key === "Enter") {
+        event.preventDefault();
+        document.getElementById("search-form").submit();
+      }
+    });
+  </script>
+  
+
+    
+</body>
+</html>

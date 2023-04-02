@@ -1,0 +1,9 @@
+{% extends 'question_quiz_list.html' %}
+{% load static %}
+
+{% block content %}
+  <h1>Thank you for taking the quiz!</h1>
+  <p>Your responses have been submitted successfully.</p>
+  <p>Click the button below to see your results:</p>
+  <a href="{% url 'result' quiz.id %}" class="btn btn-primary">View Results</a>
+{% endblock %}

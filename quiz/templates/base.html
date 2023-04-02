@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    {% load static %}
+
+<head>
+    <meta charset="utf-8">
+    <title>{% block title %}My Site{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    {% block extra_head %}{% endblock %}
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+              
+            </ul>
+        </nav>
+    </header>
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+    <footer>
+        <p>&copy; {{ year }} My Site</p>
+    </footer>
+    {% block extra_body %}{% endblock %}
+</body>
+</html>
